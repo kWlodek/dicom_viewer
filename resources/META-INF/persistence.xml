@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="viewer">
+        <class>at.spengergasse.hbgm.entities.Patient</class>
+        <class>at.spengergasse.hbgm.entities.Study</class>
+        <class>at.spengergasse.hbgm.entities.Series</class>
+        <class>at.spengergasse.hbgm.entities.Instance</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/viewerdb" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="" />
+            <property name="javax.persistence.schema-generation.database.action" value="create" />
+        </properties>
+    </persistence-unit>
+</persistence>
